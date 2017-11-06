@@ -7,6 +7,14 @@
         <div class="row center">
             <h5 class="header col s12 light">Welcome to our project.</h5>
         </div>
+
+        <div class="row center">
+            <ul>
+                {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 
