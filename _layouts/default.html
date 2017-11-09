@@ -1,0 +1,21 @@
+{% include top.html %}
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br>
+        <div class="row center">
+            <h3 class="header col s12 light">Join the dialogue.</h3>
+        </div>
+
+        <div class="row center">
+            <ul>
+                {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{% include bottom.html %}
