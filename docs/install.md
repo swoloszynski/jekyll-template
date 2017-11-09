@@ -12,7 +12,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 $ brew doctor
 $ brew update
 # Ruby
-# brew install rbenv ruby-build
+$ brew install rbenv ruby-build
 $ rbenv install 2.2.2
 $ rbenv global 2.2.2
 $ ruby -v
