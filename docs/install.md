@@ -10,7 +10,7 @@ $ xcode-select --install
 # Homebrew. Skip if you already have this installed.
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
-$ brew update
+# Update homebrew with provided commands if brew doctor tells you to. (You can usually ignore warnings.)
 # Ruby
 $ brew install rbenv ruby-build
 $ rbenv install 2.2.2
