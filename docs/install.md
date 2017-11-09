@@ -29,4 +29,14 @@ $ brew install node
 # Jekyll
 $ gem install jekyll
 $ jekyll -v
+# If you see this error: Ignoring ffi-1.9.18 because its extensions are not built...`, run the command:
+$ gem pristine ffi --version 1.9.18
+# Install Yarn package manager
+$ brew install yarn
+# Install node modules with yarn (Required for deploy, not local development.)
+$ yarn
+# Run the server
+$ jekyll serve
 ```
+
+You should see the site on [4000](http://127.0.0.1:4000).
