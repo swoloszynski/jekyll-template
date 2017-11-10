@@ -38,3 +38,7 @@ exclude: [
   'README.md',
   '.travis.yml',
 ]
+
+sass:
+    style: compressed
+    sass_dir: _sass
