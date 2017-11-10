@@ -9,6 +9,7 @@ Expanding worldviews through balanced discussions. | Get out of your echo chambe
 ```
 (imho) $ rvm use
 (imho) $ yarn
+(imho) $ bundle install
 (imho) $ jekyll serve
 ```
 
@@ -21,3 +22,11 @@ Expanding worldviews through balanced discussions. | Get out of your echo chambe
 - Run the command `surge _site/ imho.press`.
 
 For more detailed deploy notes, see [Deploy Doc](./docs/deploy.md).
+
+### Tests
+
+Travis CI runs `scripts/cibuild`.
+
+[HTML Proofer](https://github.com/gjtorikian/html-proofer) lints the html files.
+
+To ignore an HTML tag from a check, add `data-proofer-ignore` as an attribute.
