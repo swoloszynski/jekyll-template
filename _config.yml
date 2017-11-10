@@ -28,3 +28,13 @@ include: ['_pages']
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude: [
+  'vendor',
+  'node_modules',
+  'Gemfile',
+  'Gemfile.lock',
+  'yarn.lock',
+  'README.md',
+  '.travis.yml',
+]
