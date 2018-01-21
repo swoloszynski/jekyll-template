@@ -1,5 +1,6 @@
 main:
     - { text: 'Home', url: '/' }
+    - { text: 'Materialize Starter', url: '/starter' }
     - { text: 'About', url: '/about' }
 
 footer:
