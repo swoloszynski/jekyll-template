@@ -8,6 +8,12 @@
       <title>{{ site.data.global.title }}</title>
     {% endif %}
 
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% else %}
+      <meta name="description" content="{{ site.data.global.description }}">
+    {% endif %}
+
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
