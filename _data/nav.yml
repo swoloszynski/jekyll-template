@@ -2,3 +2,11 @@ main:
     - { text: 'Home', url: '/' }
     - { text: 'About', url: '/about' }
 
+footer:
+  general:
+    - { text: 'Media', url: '#'}
+    - { text: 'Careers', url: '#'}
+    - { text: 'Contact', url: '#'}
+  social:
+    - { text: 'Facebook', url: 'https://www.facebook.com/'}
+    - { text: 'Twitter', url: 'https://www.twitter.com/'}
