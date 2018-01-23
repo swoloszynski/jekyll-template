@@ -2,11 +2,30 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>{{ site.data.global.title }}</title>
+    {% endif %}
+
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% else %}
+      <meta name="description" content="{{ site.data.global.description }}">
+    {% endif %}
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Google Analytics - Global site tag (gtag.js) -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.global.google_analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.data.global.google_analytics_id }}');
+    </script>-->
 </head>
 
 
