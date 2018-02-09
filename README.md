@@ -1,27 +1,47 @@
-# IMHO
+# Jekyll Tempalte
 
-Expanding worldviews through balanced discussions. | Get out of your echo chamber!
+A static site template to jumpstart your next JAM stack project. Built with Jekyll and Materialize CSS.
 
-### Quick Start - Local Development
+### Quick Start
 
 - For system setup instructions, see [Install Doc](./docs/install.md)
 
 ```
-(imho) $ rvm use
-(imho) $ yarn
-(imho) $ bundle install
-(imho) $ jekyll serve
+$ rvm use 2.2.3
+$ yarn  # First set up only
+$ bundle install  # first set up only
+$ jekyll serve
 ```
 
-### Quick Deploy - Staging
+### Create a new repo mirroring this one
 
-- Run the command `surge _site/ imho.surge.sh`.
+- Create a new repo that isn't initialized.
+- Clone this repo
 
-### Quick Deploy - Production
+```bash
+$ git clone --bare https://github.com/swoloszynski/jekyll-template.git
+```
 
-- Run the command `surge _site/ imho.press`.
+- Mirror push to the new repo.
 
-For more detailed deploy notes, see [Deploy Doc](./docs/deploy.md).
+```bash
+$ cd old-repository.git
+$ git push --mirror https://github.com/exampleuser/new-project.git
+```
+
+- Remove the clone of the template repo.
+
+```bash
+$ cd ..
+$ rm -rf jekyll-template.git
+```
+
+- Clone the new repo.
+
+```bash
+$ git clone git@github.com:swoloszynski/new-project.git
+```
+
 
 ### Tests
 
@@ -29,4 +49,4 @@ Travis CI runs `scripts/cibuild`.
 
 [HTML Proofer](https://github.com/gjtorikian/html-proofer) lints the html files.
 
-To ignore an HTML tag from a check, add `data-proofer-ignore` as an attribute.
+To exclude an HTML tag from checks, add `data-proofer-ignore` as an attribute.
